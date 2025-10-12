@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Result for {{ filename }}</h2>
+    <img src="{{ vis_rel_path }}" style="max-width: 800px;" />
+    <h3>Counts</h3>
+    <ul>
+      {% for k, v in counts.items() %}
+        <li>{{ k }}: {{ v }}</li>
+      {% endfor %}
+    </ul>
+    <p><a href="/">Back</a> | <a href="/inventory">Inventory</a></p>
+  </body>
+</html>

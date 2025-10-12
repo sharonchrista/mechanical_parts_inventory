@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Inventory</h2>
+    <table border="1" cellpadding="6">
+      <tr><th>Class</th><th>Qty</th></tr>
+      {% for row in inventory %}
+        <tr><td>{{ row.class_name }}</td><td>{{ row.qty }}</td></tr>
+      {% endfor %}
+    </table>
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
